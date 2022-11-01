@@ -13,12 +13,12 @@ import azure.functions as func
 #    api_allowed_prefixes = ('https://xxx-yyy.azure-api.net/')
 #    enabled = true;
 #
-# create or replace external function sf_ext_fct_model_inference(name varchar)
+# create or replace external function sf_ext_fct_remote_echo(name varchar)
 #    returns variant
 #    api_integration = az_function_integration
 #    as 'https://xxx-yyy.azure-api.net/aaa/bbb';
 #    
-# select sf_ext_fct_model_inference('Elon Musk');
+# select sf_ext_fct_remote_echo('Elon Musk');
 #
 
 def main(req: func.HttpRequest) -> func.HttpResponse:

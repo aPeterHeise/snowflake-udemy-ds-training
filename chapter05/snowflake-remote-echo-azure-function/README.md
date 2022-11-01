@@ -1,1 +1,0 @@
-# snowflake-example-ml-api
